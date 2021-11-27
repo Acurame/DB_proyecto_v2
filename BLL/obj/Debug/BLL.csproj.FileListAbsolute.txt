@@ -1,0 +1,10 @@
+D:\ejercicios\DB_proyecto_v2\BLL\bin\Debug\BLL.dll
+D:\ejercicios\DB_proyecto_v2\BLL\bin\Debug\BLL.pdb
+D:\ejercicios\DB_proyecto_v2\BLL\bin\Debug\DAL.dll
+D:\ejercicios\DB_proyecto_v2\BLL\bin\Debug\DAL.pdb
+D:\ejercicios\DB_proyecto_v2\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+D:\ejercicios\DB_proyecto_v2\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+D:\ejercicios\DB_proyecto_v2\BLL\obj\Debug\BLL.csproj.CopyComplete
+D:\ejercicios\DB_proyecto_v2\BLL\obj\Debug\BLL.dll
+D:\ejercicios\DB_proyecto_v2\BLL\obj\Debug\BLL.pdb
+D:\ejercicios\DB_proyecto_v2\BLL\bin\Debug\DAL.dll.config
