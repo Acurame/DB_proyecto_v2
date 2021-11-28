@@ -19,6 +19,22 @@ namespace UI.productos
             InitializeComponent();
         }
 
+        int x = 0;
+        int y = 0;
+        private void panel1_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (e.Button != MouseButtons.Left)
+            {
+                x = e.X;
+                y = e.Y;
+            }
+            else
+            {
+                Top = Top + (e.Y - y);
+                Left = Left + (e.X - x);
+            }
+        }
+
         private void btn_canselar_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -30,5 +46,7 @@ namespace UI.productos
             tipo.Crear_tipo(nombre);
             this.Close();
         }
+
+        
     }
 }

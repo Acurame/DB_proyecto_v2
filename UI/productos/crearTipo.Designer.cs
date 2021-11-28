@@ -44,6 +44,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(425, 5);
             this.panel1.TabIndex = 1;
+            this.panel1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseMove);
             // 
             // label1
             // 
@@ -123,6 +124,7 @@
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "crearTipo";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "crearTipo";
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -1,7 +1,7 @@
 D:\ejercicios\DB_proyecto_v2\DAL\bin\Debug\DAL.dll
 D:\ejercicios\DB_proyecto_v2\DAL\bin\Debug\DAL.pdb
-D:\ejercicios\DB_proyecto_v2\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
 D:\ejercicios\DB_proyecto_v2\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
 D:\ejercicios\DB_proyecto_v2\DAL\obj\Debug\DAL.dll
 D:\ejercicios\DB_proyecto_v2\DAL\obj\Debug\DAL.pdb
 D:\ejercicios\DB_proyecto_v2\DAL\bin\Debug\DAL.dll.config
+D:\ejercicios\DB_proyecto_v2\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache

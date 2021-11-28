@@ -11,9 +11,11 @@ namespace BLL
     public class Empleados
     {
         private usuariosTableAdapter Empleado;
+        private empleadoTableAdapter EmpleadoAdapter;
         public Empleados()
         {
             Empleado = new usuariosTableAdapter();
+            EmpleadoAdapter = new empleadoTableAdapter();
         }
         public string Validacion_Usuario(string _nombre, string _clave)
         {
@@ -54,6 +56,22 @@ namespace BLL
                 validacion = "ERROR" + ex.Message;
             }
             return validacion;
+        }
+        public string crear_empleado(string _Usuario, string _clave, string _permisos, string _nombre, string _apellidos, string _telefono)
+        {
+            string empledo = " ";
+            try
+            {
+                Empleado.crearEmpleado(_Usuario, _clave, _permisos, _nombre, _apellidos, _telefono);
+            }catch (Exception ex)
+            {
+                empledo = ex.Message;
+            }
+            return empledo;
+        }
+        public DataTable Listado_Empleado_()
+        {
+            return EmpleadoAdapter.Listado_Empleados_();
         }
     }
 }

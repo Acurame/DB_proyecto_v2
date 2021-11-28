@@ -27,10 +27,7 @@ namespace UI
             this.panelAdmin.Tag = Formulario_open;
             Formulario_open.Show();
         }
-        private void button1_Click(object sender, EventArgs e)
-        {
-            OpenForm(new productos.home());
-        }
+        
         int x = 0;
         int y = 0;
         private void panel1_MouseMove(object sender, MouseEventArgs e)
@@ -45,6 +42,31 @@ namespace UI
                 Top = Top + (e.Y - y);
                 Left = Left + (e.X - x);
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            OpenForm(new productos.home());
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            OpenForm(new Clientes.home());
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            OpenForm(new Empleado.home());
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            OpenForm(new Proveedores.home());
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            OpenForm(new Contacto.home());
         }
     }
 }

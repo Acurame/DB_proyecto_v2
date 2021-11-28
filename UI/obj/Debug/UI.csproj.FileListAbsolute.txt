@@ -19,3 +19,11 @@ D:\ejercicios\DB_proyecto_v2\UI\obj\Debug\UI.admin.resources
 D:\ejercicios\DB_proyecto_v2\UI\obj\Debug\UI.productos.home.resources
 D:\ejercicios\DB_proyecto_v2\UI\obj\Debug\UI.productos.crearProducto.resources
 D:\ejercicios\DB_proyecto_v2\UI\obj\Debug\UI.productos.crearTipo.resources
+D:\ejercicios\DB_proyecto_v2\UI\obj\Debug\UI.Clientes.home.resources
+D:\ejercicios\DB_proyecto_v2\UI\obj\Debug\UI.Clientes.crearCliente.resources
+D:\ejercicios\DB_proyecto_v2\UI\obj\Debug\UI.Empleado.home.resources
+D:\ejercicios\DB_proyecto_v2\UI\obj\Debug\UI.Empleado.crearEmpleado.resources
+D:\ejercicios\DB_proyecto_v2\UI\obj\Debug\UI.Proveedores.crear_proveedor.resources
+D:\ejercicios\DB_proyecto_v2\UI\obj\Debug\UI.Proveedores.home.resources
+D:\ejercicios\DB_proyecto_v2\UI\obj\Debug\UI.Proveedores.crear_contactos.resources
+D:\ejercicios\DB_proyecto_v2\UI\obj\Debug\UI.Contacto.home.resources
