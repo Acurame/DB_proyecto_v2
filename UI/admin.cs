@@ -73,5 +73,10 @@ namespace UI
         {
             OpenForm(new Abastecimiento.home());
         }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            OpenForm(new Factura.home());
+        }
     }
 }
