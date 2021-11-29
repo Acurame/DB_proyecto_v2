@@ -27,3 +27,5 @@ D:\ejercicios\DB_proyecto_v2\UI\obj\Debug\UI.Proveedores.crear_proveedor.resourc
 D:\ejercicios\DB_proyecto_v2\UI\obj\Debug\UI.Proveedores.home.resources
 D:\ejercicios\DB_proyecto_v2\UI\obj\Debug\UI.Proveedores.crear_contactos.resources
 D:\ejercicios\DB_proyecto_v2\UI\obj\Debug\UI.Contacto.home.resources
+D:\ejercicios\DB_proyecto_v2\UI\obj\Debug\UI.Abastecimiento.home.resources
+D:\ejercicios\DB_proyecto_v2\UI\obj\Debug\UI.Abastecimiento.Crear_Abasto.resources

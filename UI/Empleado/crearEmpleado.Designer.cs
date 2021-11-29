@@ -48,6 +48,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.btn_canselar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // panel8
@@ -249,7 +250,6 @@
             // 
             // button1
             // 
-            this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
@@ -265,12 +265,30 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // home
+            // btn_canselar
+            // 
+            this.btn_canselar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_canselar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_canselar.ForeColor = System.Drawing.Color.White;
+            this.btn_canselar.Image = global::UI.Properties.Resources.close;
+            this.btn_canselar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_canselar.Location = new System.Drawing.Point(479, 142);
+            this.btn_canselar.Name = "btn_canselar";
+            this.btn_canselar.Padding = new System.Windows.Forms.Padding(20, 0, 20, 0);
+            this.btn_canselar.Size = new System.Drawing.Size(200, 50);
+            this.btn_canselar.TabIndex = 46;
+            this.btn_canselar.Text = "Canselar";
+            this.btn_canselar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_canselar.UseVisualStyleBackColor = true;
+            this.btn_canselar.Click += new System.EventHandler(this.btn_canselar_Click);
+            // 
+            // crearEmpleado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.ClientSize = new System.Drawing.Size(730, 430);
+            this.Controls.Add(this.btn_canselar);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.panel1);
@@ -292,7 +310,7 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.panel8);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "home";
+            this.Name = "crearEmpleado";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "home";
             this.ResumeLayout(false);
@@ -322,5 +340,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btn_canselar;
     }
 }

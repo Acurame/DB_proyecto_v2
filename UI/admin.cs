@@ -68,5 +68,10 @@ namespace UI
         {
             OpenForm(new Contacto.home());
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            OpenForm(new Abastecimiento.home());
+        }
     }
 }

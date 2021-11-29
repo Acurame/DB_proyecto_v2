@@ -49,5 +49,10 @@ namespace UI.Empleado
             }
             this.Close();
         }
+
+        private void btn_canselar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
