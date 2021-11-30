@@ -78,5 +78,15 @@ namespace UI
         {
             OpenForm(new Factura.home());
         }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            OpenForm(new Reportes.Reportes_productos());
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            OpenForm(new Reportes.Reporte_Facturas());
+        }
     }
 }

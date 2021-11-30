@@ -48,6 +48,24 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1484.0\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1484.0\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1484.0\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1484.0\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1484.0\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -96,6 +114,21 @@
     </Compile>
     <Compile Include="Contacto\home.Designer.cs">
       <DependentUpon>home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DB_ProyectoDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DB_ProyectoDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DB_ProyectoDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DB_ProyectoDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DB_ProyectoDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DB_ProyectoDataSet2.xsd</DependentUpon>
     </Compile>
     <Compile Include="Empleado\crearEmpleado.cs">
       <SubType>Form</SubType>
@@ -165,6 +198,25 @@
     <Compile Include="Proveedores\home.Designer.cs">
       <DependentUpon>home.cs</DependentUpon>
     </Compile>
+    <Compile Include="Reportes\Reporte Facturas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\Reporte Facturas.Designer.cs">
+      <DependentUpon>Reporte Facturas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\Reportes Empleados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\Reportes Empleados.Designer.cs">
+      <DependentUpon>Reportes Empleados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\Reportes_productos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\Reportes_productos.Designer.cs">
+      <DependentUpon>Reportes_productos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SqlServerTypes\Loader.cs" />
     <EmbeddedResource Include="Abastecimiento\Crear_Abasto.resx">
       <DependentUpon>Crear_Abasto.cs</DependentUpon>
     </EmbeddedResource>
@@ -226,6 +278,51 @@
     <EmbeddedResource Include="Proveedores\home.resx">
       <DependentUpon>home.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Report1.rdlc" />
+    <EmbeddedResource Include="Reportes\Report2.rdlc" />
+    <EmbeddedResource Include="Reportes\Reporte Facturas.resx">
+      <DependentUpon>Reporte Facturas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Reportes Empleados.resx">
+      <DependentUpon>Reportes Empleados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Reportes_productos.resx">
+      <DependentUpon>Reportes_productos.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="DB_ProyectoDataSet.xsc">
+      <DependentUpon>DB_ProyectoDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DB_ProyectoDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DB_ProyectoDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DB_ProyectoDataSet.xss">
+      <DependentUpon>DB_ProyectoDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DB_ProyectoDataSet1.xsc">
+      <DependentUpon>DB_ProyectoDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DB_ProyectoDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DB_ProyectoDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DB_ProyectoDataSet1.xss">
+      <DependentUpon>DB_ProyectoDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DB_ProyectoDataSet2.xsc">
+      <DependentUpon>DB_ProyectoDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="DB_ProyectoDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DB_ProyectoDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DB_ProyectoDataSet2.xss">
+      <DependentUpon>DB_ProyectoDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -324,8 +421,21 @@
   <ItemGroup>
     <None Include="Resources\bolsa-de-la-compra.png" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="reportes\" />
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
